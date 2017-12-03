@@ -46,6 +46,23 @@
 #    Data properties
 #################################################################
 
+###  http://semanticweb.org/Group21/ontology/inDistrict
+:inDistrict rdf:type owl:ObjectProperty ;
+             rdfs:domain :Street ;
+             rdfs:range :District .
+
+
+###  http://semanticweb.org/Group21/ontology/inTheStreet
+:inTheStreet rdf:type owl:ObjectProperty ;
+           rdfs:domain :Center ;
+           rdfs:range :Street .
+
+
+###  http://semanticweb.org/Group21/ontology/hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+            rdfs:domain :BiciStop ;
+            rdfs:range :Center .
+
 ###  http://semanticweb.org/Group21/ontology/hasAvailability
 :hasAvailability rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Availability ;
@@ -79,6 +96,21 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://semanticweb.org/Group21/ontology/Street
+:Street rdf:type owl:Class .
+
+
+###  http://semanticweb.org/Group21/ontology/Center
+:Center rdf:type owl:Class .
+
+
+###  http://semanticweb.org/Group21/ontology/District
+:District rdf:type owl:Class .
+
+
+###  http://semanticweb.org/Group21/ontology/BiciStop
+:BiciStop rdf:type owl:Class .
 
 ###  http://semanticweb.org/Group21/ontology/Availability
 :Availability rdf:type owl:Class .
